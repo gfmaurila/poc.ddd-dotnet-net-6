@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{AF7DF466-7DAC-440D-9AA3-F111C2A85167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{52FE7994-FFBD-456A-9E68-1E8096D72EAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{C1C7299E-18B7-42CC-AFA5-E90E10B38C05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{6EDE25F7-34DE-4AC0-B605-723A37F77839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Doc", "06 - Doc", "{B03427FA-FCC8-40D8-8E99-8D4F01749F46}"
+	ProjectSection(SolutionItems) = preProject
+		06 - Doc\leia.txt = 06 - Doc\leia.txt
+		06 - Doc\poc.dotnet6.ddd.ex1.sql = 06 - Doc\poc.dotnet6.ddd.ex1.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Domain", "03 - Domain\Demo.Domain\Demo.Domain.csproj", "{FF9684B0-BD6D-4A98-A76F-7AEB1A0C3A97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Domain.Core", "03 - Domain\Demo.Domain.Core\Demo.Domain.Core.csproj", "{10589CA2-CB09-4F08-B246-911A8A54F96A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Domain.Services", "03 - Domain\Demo.Domain.Services\Demo.Domain.Services.csproj", "{20CC2B6A-3A7C-4A21-A7A3-7A2EC4B0F70D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{96233C55-6D94-475A-ABF0-D49E0EC685B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{919459A5-B8A9-41E6-91E1-0FA3579E455D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infrastructure.Data", "04  - Infrastructure\4.1 - Data\Demo.Infrastructure.Data\Demo.Infrastructure.Data.csproj", "{2E3130AC-56F6-487D-84C9-1E4736F0055B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infrastruture.Repository", "04  - Infrastructure\4.1 - Data\Demo.Infrastruture.Repository\Demo.Infrastruture.Repository.csproj", "{84B347DF-5DB8-4171-861D-ADF8CF79895F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infrastruture.CrossCutting.IOC", "04  - Infrastructure\4.2 - CrossCutting\Demo.Infrastruture.CrossCutting.IOC\Demo.Infrastruture.CrossCutting.IOC.csproj", "{ED00CC45-ED51-4AFE-AC0C-0C40BE818512}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{F85EEB73-3D13-4A48-806E-588AD03AEEDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.API", "01 - Presentation\Demo.API\Demo.API.csproj", "{9F80698B-5BD6-49A4-82B4-A05ACE565F10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Application.Demo.DTO", "02 - Application\Demo.Application.Demo.DTO\Demo.Application.Demo.DTO.csproj", "{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infrastruture.CrossCutting", "04  - Infrastructure\4.2 - CrossCutting\Demo.Infrastruture.CrossCutting.Core\Demo.Infrastruture.CrossCutting\Demo.Infrastruture.CrossCutting.csproj", "{967ECECE-593C-47B2-A036-AE0441314DD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Tests", "05 - Tests\Demo.Tests\Demo.Tests.csproj", "{500200A1-9815-4494-9569-16C3A177D1DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{4DAA992C-81AB-4558-8306-6FC75D8820C5}"
+	ProjectSection(SolutionItems) = preProject
+		06 - Doc\docker-compose\docker-compose.yaml = 06 - Doc\docker-compose\docker-compose.yaml
+		06 - Doc\docker-compose\entrypoint.sh = 06 - Doc\docker-compose\entrypoint.sh
+		06 - Doc\docker-compose\leia.txt = 06 - Doc\docker-compose\leia.txt
+		06 - Doc\docker-compose\poc.dotnet6.ddd.ex1.sql = 06 - Doc\docker-compose\poc.dotnet6.ddd.ex1.sql
+		06 - Doc\docker-compose\script.sql = 06 - Doc\docker-compose\script.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sqlserver", "sqlserver", "{8390B6FD-7FE2-41EE-A6D4-7170070BE724}"
+	ProjectSection(SolutionItems) = preProject
+		06 - Doc\sqlserver\Dockerfile = 06 - Doc\sqlserver\Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF9684B0-BD6D-4A98-A76F-7AEB1A0C3A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9684B0-BD6D-4A98-A76F-7AEB1A0C3A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9684B0-BD6D-4A98-A76F-7AEB1A0C3A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9684B0-BD6D-4A98-A76F-7AEB1A0C3A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10589CA2-CB09-4F08-B246-911A8A54F96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10589CA2-CB09-4F08-B246-911A8A54F96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10589CA2-CB09-4F08-B246-911A8A54F96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10589CA2-CB09-4F08-B246-911A8A54F96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CC2B6A-3A7C-4A21-A7A3-7A2EC4B0F70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CC2B6A-3A7C-4A21-A7A3-7A2EC4B0F70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CC2B6A-3A7C-4A21-A7A3-7A2EC4B0F70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CC2B6A-3A7C-4A21-A7A3-7A2EC4B0F70D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3130AC-56F6-487D-84C9-1E4736F0055B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3130AC-56F6-487D-84C9-1E4736F0055B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3130AC-56F6-487D-84C9-1E4736F0055B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3130AC-56F6-487D-84C9-1E4736F0055B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B347DF-5DB8-4171-861D-ADF8CF79895F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B347DF-5DB8-4171-861D-ADF8CF79895F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B347DF-5DB8-4171-861D-ADF8CF79895F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B347DF-5DB8-4171-861D-ADF8CF79895F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED00CC45-ED51-4AFE-AC0C-0C40BE818512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED00CC45-ED51-4AFE-AC0C-0C40BE818512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED00CC45-ED51-4AFE-AC0C-0C40BE818512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED00CC45-ED51-4AFE-AC0C-0C40BE818512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F80698B-5BD6-49A4-82B4-A05ACE565F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F80698B-5BD6-49A4-82B4-A05ACE565F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F80698B-5BD6-49A4-82B4-A05ACE565F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F80698B-5BD6-49A4-82B4-A05ACE565F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967ECECE-593C-47B2-A036-AE0441314DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967ECECE-593C-47B2-A036-AE0441314DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967ECECE-593C-47B2-A036-AE0441314DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967ECECE-593C-47B2-A036-AE0441314DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500200A1-9815-4494-9569-16C3A177D1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500200A1-9815-4494-9569-16C3A177D1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500200A1-9815-4494-9569-16C3A177D1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500200A1-9815-4494-9569-16C3A177D1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF9684B0-BD6D-4A98-A76F-7AEB1A0C3A97} = {C1C7299E-18B7-42CC-AFA5-E90E10B38C05}
+		{10589CA2-CB09-4F08-B246-911A8A54F96A} = {C1C7299E-18B7-42CC-AFA5-E90E10B38C05}
+		{20CC2B6A-3A7C-4A21-A7A3-7A2EC4B0F70D} = {C1C7299E-18B7-42CC-AFA5-E90E10B38C05}
+		{96233C55-6D94-475A-ABF0-D49E0EC685B6} = {6EDE25F7-34DE-4AC0-B605-723A37F77839}
+		{919459A5-B8A9-41E6-91E1-0FA3579E455D} = {6EDE25F7-34DE-4AC0-B605-723A37F77839}
+		{2E3130AC-56F6-487D-84C9-1E4736F0055B} = {96233C55-6D94-475A-ABF0-D49E0EC685B6}
+		{84B347DF-5DB8-4171-861D-ADF8CF79895F} = {96233C55-6D94-475A-ABF0-D49E0EC685B6}
+		{ED00CC45-ED51-4AFE-AC0C-0C40BE818512} = {919459A5-B8A9-41E6-91E1-0FA3579E455D}
+		{9F80698B-5BD6-49A4-82B4-A05ACE565F10} = {AF7DF466-7DAC-440D-9AA3-F111C2A85167}
+		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6} = {52FE7994-FFBD-456A-9E68-1E8096D72EAE}
+		{967ECECE-593C-47B2-A036-AE0441314DD1} = {919459A5-B8A9-41E6-91E1-0FA3579E455D}
+		{500200A1-9815-4494-9569-16C3A177D1DD} = {F85EEB73-3D13-4A48-806E-588AD03AEEDE}
+		{4DAA992C-81AB-4558-8306-6FC75D8820C5} = {B03427FA-FCC8-40D8-8E99-8D4F01749F46}
+		{8390B6FD-7FE2-41EE-A6D4-7170070BE724} = {B03427FA-FCC8-40D8-8E99-8D4F01749F46}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97FC7B88-8CD2-4848-96EF-20B1A474C19A}
+	EndGlobalSection
+EndGlobal

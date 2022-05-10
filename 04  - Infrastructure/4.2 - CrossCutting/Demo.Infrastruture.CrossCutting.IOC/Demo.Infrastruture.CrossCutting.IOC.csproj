@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\03 - Domain\Demo.Domain.Core\Demo.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\..\03 - Domain\Demo.Domain.Services\Demo.Domain.Services.csproj" />
+    <ProjectReference Include="..\..\..\03 - Domain\Demo.Domain\Demo.Domain.csproj" />
+    <ProjectReference Include="..\..\4.1 - Data\Demo.Infrastruture.Repository\Demo.Infrastruture.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
