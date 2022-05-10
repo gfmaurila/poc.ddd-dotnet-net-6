@@ -9,10 +9,10 @@
 
 # SqlServer Docker
 - docker --version
-- Server=localhost,1433;Database=UserAPI;User ID=sa;Password=@G23u10i1985
+- Server=localhost,1433;Database=UserAPI;User ID=sa;Password=@G23u10i1985@
 - docker build -t gfmaurila/sqlserver .
 - docker pull mcr.microsoft.com/mssql/server
-- docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=@G23u10i1985" -p 1433:1433 -d gfmaurila/sqlserver
+- docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=@G23u10i1985@" -p 1433:1433 -d gfmaurila/sqlserver
 
 # Iniciar os segredos de usuários
 - dotnet user-secrets init --project .\Demo.API.csproj 
@@ -25,7 +25,7 @@
 # Configurar dados de autenticação (JWT)
 - dotnet user-secrets set "Jwt:Key" "cHJqc2xuYmFjay1ndWlsaGVybWVtYXVyaWxh"
 - dotnet user-secrets set "Jwt:Login" "login"
-- dotnet user-secrets set "Jwt:Password" "@G23u10i1985"
+- dotnet user-secrets set "Jwt:Password" "@G23u10i1985@"
 
 # Banco
 - Add-Migration InitialCreate
