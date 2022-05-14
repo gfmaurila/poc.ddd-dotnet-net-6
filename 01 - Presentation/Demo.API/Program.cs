@@ -5,12 +5,7 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -27,6 +22,7 @@ builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
 
 #region DI
 ConfigureDbContext.ConfigureDependenceDbContext(builder.Services, builder.Configuration);
+ConfigureJWT.ConfigureDependenceJWT(builder.Services, builder.Configuration);
 ConfigureService.ConfigureDependenceService(builder.Services);
 ConfigureRepository.ConfigureDependenceRepository(builder.Services);
 #endregion

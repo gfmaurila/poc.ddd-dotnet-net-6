@@ -12,6 +12,7 @@ namespace Demo.Infrastruture.CrossCutting.IOC.DependenceInjection
         {
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IPasswordService, PasswordService>();
+            services.AddTransient<ITokenGeneratorService, TokenGeneratorService>();
         }
     }
 }
