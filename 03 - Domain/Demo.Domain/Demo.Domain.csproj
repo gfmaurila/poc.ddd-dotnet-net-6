@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\04  - Infrastructure\4.2 - CrossCutting\Demo.Infrastruture.CrossCutting.Core\Demo.Infrastruture.CrossCutting\Demo.Infrastruture.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\04  - Infrastructure\4.2 - CrossCutting\Demo.Infrastruture.CrossCutting\Demo.Infrastruture.CrossCutting.csproj" />
   </ItemGroup>
 
 </Project>

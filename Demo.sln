@@ -39,8 +39,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.API", "01 - Presentati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Application.Demo.DTO", "02 - Application\Demo.Application.Demo.DTO\Demo.Application.Demo.DTO.csproj", "{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infrastruture.CrossCutting", "04  - Infrastructure\4.2 - CrossCutting\Demo.Infrastruture.CrossCutting.Core\Demo.Infrastruture.CrossCutting\Demo.Infrastruture.CrossCutting.csproj", "{967ECECE-593C-47B2-A036-AE0441314DD1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Tests", "05 - Tests\Demo.Tests\Demo.Tests.csproj", "{500200A1-9815-4494-9569-16C3A177D1DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{4DAA992C-81AB-4558-8306-6FC75D8820C5}"
@@ -56,6 +54,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sqlserver", "sqlserver", "{
 	ProjectSection(SolutionItems) = preProject
 		06 - Doc\sqlserver\Dockerfile = 06 - Doc\sqlserver\Dockerfile
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Infrastruture.CrossCutting", "04  - Infrastructure\4.2 - CrossCutting\Demo.Infrastruture.CrossCutting\Demo.Infrastruture.CrossCutting.csproj", "{C9ABFA8D-F246-42D7-9B58-795F5B7B9802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,14 +95,14 @@ Global
 		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{967ECECE-593C-47B2-A036-AE0441314DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{967ECECE-593C-47B2-A036-AE0441314DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{967ECECE-593C-47B2-A036-AE0441314DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{967ECECE-593C-47B2-A036-AE0441314DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{500200A1-9815-4494-9569-16C3A177D1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{500200A1-9815-4494-9569-16C3A177D1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{500200A1-9815-4494-9569-16C3A177D1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{500200A1-9815-4494-9569-16C3A177D1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9ABFA8D-F246-42D7-9B58-795F5B7B9802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9ABFA8D-F246-42D7-9B58-795F5B7B9802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9ABFA8D-F246-42D7-9B58-795F5B7B9802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9ABFA8D-F246-42D7-9B58-795F5B7B9802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,10 +118,10 @@ Global
 		{ED00CC45-ED51-4AFE-AC0C-0C40BE818512} = {919459A5-B8A9-41E6-91E1-0FA3579E455D}
 		{9F80698B-5BD6-49A4-82B4-A05ACE565F10} = {AF7DF466-7DAC-440D-9AA3-F111C2A85167}
 		{CADB0305-D4C5-452E-9C71-24AB7B29F4C6} = {52FE7994-FFBD-456A-9E68-1E8096D72EAE}
-		{967ECECE-593C-47B2-A036-AE0441314DD1} = {919459A5-B8A9-41E6-91E1-0FA3579E455D}
 		{500200A1-9815-4494-9569-16C3A177D1DD} = {F85EEB73-3D13-4A48-806E-588AD03AEEDE}
 		{4DAA992C-81AB-4558-8306-6FC75D8820C5} = {B03427FA-FCC8-40D8-8E99-8D4F01749F46}
 		{8390B6FD-7FE2-41EE-A6D4-7170070BE724} = {B03427FA-FCC8-40D8-8E99-8D4F01749F46}
+		{C9ABFA8D-F246-42D7-9B58-795F5B7B9802} = {919459A5-B8A9-41E6-91E1-0FA3579E455D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97FC7B88-8CD2-4848-96EF-20B1A474C19A}
